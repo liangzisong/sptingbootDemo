@@ -7,12 +7,8 @@ import org.apache.shiro.realm.text.IniRealm;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import javax.lang.model.SourceVersion;
 
 @Controller
 public class indexController {
@@ -43,6 +39,6 @@ public class indexController {
             modelAndView.addObject("state","用户名或密码错误");
             return "login";
         }
-        return "index";
+        return "index1";
     }
 }
